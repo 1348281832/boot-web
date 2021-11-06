@@ -1,0 +1,26 @@
+server:
+  port: 8888
+#  multipart:
+#    max-file-size: 10MB
+#    max-request-size: 100MB
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+    contentnegotiation:
+      favor-parameter: true
+  datasource:
+    url: jdbc:mysql://47.101.65.112:3306/aman
+    username: Aman
+    password: Aa121212
+#    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+  jdbc:
+    template:
+      query-timeout: 3
+
+file:
+  uploadFolder: "C:\\Users\\13482\\Desktop\\"
+

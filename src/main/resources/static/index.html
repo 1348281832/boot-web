@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>my Spring Boot</h2>
+<form action="RestType" method="get">
+    <input type="hidden" name="_method" value="GET">
+    <input type="submit" value="Submit GET">
+</form>
+<form action="RestType" method="post">
+    <input type="hidden" name="_method" value="POST">
+    <input type="submit" value="Submit POST">
+</form>
+<form action="RestType" method="post">
+    <input type="hidden" name="_mymethod" value="DELETE">
+    <input type="submit" value="Submit _mymethod DELETE">
+</form>
+<form action="RestType" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" value="Submit PUT">
+</form>
+
+
+<form action="carpost" method="post">
+    <input type="text" name="name">
+    <input type="submit" value="carpost">
+</form>
+
+<form action="perConvert" method="post">
+    <input type="text" name="userName" value="zgz">
+    <input name="birth" value="2021/10/27">
+    <input type="Number" name="age" value="23">
+    <input type="text" name="pet" value="23,狗">
+    <input type="submit" value="perConvert">
+</form>
+
+<br/>
+<form action="/upload" method="post" method="post" enctype="multipart/form-data">
+    <input type="file" name="Img">
+    <input type="submit" value="提交文件">
+</form>
+</body>
+</html>
