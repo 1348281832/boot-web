@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 @Slf4j
 public class LoginInterceptor implements HandlerInterceptor {
     /**
-     * hotfix
+     * hotfix-master
      * 执行之前
      * @param request
      * @param response
