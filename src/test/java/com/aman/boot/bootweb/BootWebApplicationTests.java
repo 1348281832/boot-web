@@ -24,6 +24,7 @@ class BootWebApplicationTests {
         for (Object o : list) {
             System.out.println(o);
         }
+
         log.info("数据类型:{}",dataSource.getClass());
     }
 
