@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aman.boot.bootweb.Mapper.CityMapper">
+<!--    <select id="" resultType="com.aman.boot.bootweb.Bean.City">-->
+<!--    </select>-->
+    <insert id="insertCity">
+        insert into City(`name`,`state`,`country`) value (#{name},#{state},#{country})
+    </insert>
+</mapper>

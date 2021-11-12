@@ -1,8 +1,11 @@
 package com.aman.boot.bootweb.Controller;
 
 
+import com.aman.boot.bootweb.Bean.City;
 import com.aman.boot.bootweb.Bean.Person;
+import com.aman.boot.bootweb.Service.CityService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -13,6 +16,8 @@ import java.io.IOException;
 @Controller
 @Slf4j
 public class ResponseTest {
+    @Autowired
+    CityService cityService;
     @ResponseBody
     @GetMapping("/test/person")
     public Person getPerson() {
@@ -35,6 +40,20 @@ public class ResponseTest {
         {
             log.info("错误"+e.getMessage());
         }
+    }
+
+    @ResponseBody
+    @PostMapping("/city/getbyid")
+    public City getCityById(@RequestParam("id") Long id)
+    {
+        return cityService.getById(id);
+    }
+
+    @ResponseBody
+    @PostMapping("/city/saveCity")
+    public Integer city(City city)
+    {
+        return cityService.insertCity(city);
     }
 
 }

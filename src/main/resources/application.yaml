@@ -24,3 +24,7 @@ spring:
 file:
   uploadFolder: "C:\\Users\\13482\\Desktop\\"
 
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+#  mapper-locations: classpath:mybatis/mapper/*.xml
+
